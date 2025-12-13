@@ -291,9 +291,27 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js">
+            function openModal(modalId) {
+              document.getElementById(modalId).style.display = "block";
+              document.body.style.overflow = "hidden"; // Prevent background scroll
+            }
+            function closeModal(modalId) {
+              document.getElementById(modalId).style.display = "none";
+              document.body.style.overflow = ""; // Re-enable scrolling
+            }
+            
+            // Optional: Allow closing by clicking outside the modal content
+            document.querySelectorAll('.work__modal').forEach(modal => {
+              modal.addEventListener('click', function(e) {
+                if (e.target === modal) closeModal(modal.id);
+              });
+            });
+        </script>
+        
     </body>
 </html>
+
 
 
 
