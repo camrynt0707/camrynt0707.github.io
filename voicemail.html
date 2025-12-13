@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REU Research: UX for Marginalized Online Daters</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      background: #f7faff;
+      font-family: var(--body-font, 'Poppins', sans-serif);
+      margin: 0;
+      color: #25366b;
+    }
+    /* Header fix: reserve space so content isn't covered */
+    .main-content {
+      padding-top: 4.5rem; /* adjust based on your header's height */
+      min-height: 95vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .project-detail-card {
+      max-width: 680px;
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2.5rem 2rem 3rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0px 8px 36px rgba(36, 62, 99, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .project-detail-card h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #18336c;
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+    .project-detail-card img {
+      width: 100%;
+      max-width: 630px;
+      border-radius: 0.7rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0px 2px 12px rgba(36, 62, 99, 0.11);
+      background: #f8fafc;
+    }
+    .project-section {
+      margin-bottom: 1.7rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e4edfb;
+    }
+    .project-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .project-detail-card h2 {
+      font-size: 1.2rem;
+      color: #315b96;
+      margin-bottom: 0.7rem;
+      margin-top: 0;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+    }
+    .project-detail-card ul {
+      padding-left: 1.35rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .project-detail-card li {
+      font-size: 1.04rem;
+      line-height: 1.65;
+      margin-bottom: 0.5rem;
+      list-style: disc;
+    }
+    .project-detail-card p {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+      margin-top: 0;
+    }
+    .button.back-btn {
+      display: inline-block;
+      background-color: #315b96;
+      color: #fff;
+      padding: 0.65rem 2rem;
+      border-radius: 0.4rem;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+      box-shadow: 0px 2px 10px rgba(60,110,180,0.09);
+      font-size: 1.02rem;
+      align-self: flex-start;
+    }
+    .button.back-btn:hover {
+      background-color: #25366b;
+    }
+    @media (max-width: 800px) {
+      .project-detail-card {
+        max-width: 97vw;
+        padding: 1rem 0.3rem;
+      }
+      .project-detail-card img {
+        max-width: 100vw;
+      }
+      .main-content {
+        padding-top: 5.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky header (make sure it's not transparent) -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="index.html" class="nav__logo">Camryn Toth</a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <section class="project-detail-card">
+      <a href="index.html#work" class="button back-btn">← Back to Portfolio</a>
+      <h1>REU Research: Consent Experiences of Marginalized Online Daters</h1>
+      <img src="assets/img/4A11E12F-5A56-4EF1-8FA3-1E2DE7992052.JPG" alt="REU Research Project">
+
+      <div class="project-section">
+        <h2>Project Overview</h2>
+        <p>
+          During my summer Research Experience for Undergraduates at the University of Michigan–Flint, 
+          I focused on understanding the digital experiences of Deaf, Hard of Hearing, Visually Impaired, 
+          and Autistic adults as they navigate online dating. My work centered on how consent and sexual 
+          behavior are communicated and interpreted in these contexts. I collaborated closely with another 
+          undergraduate researcher, several graduate students, and a faculty mentor. Over the course of three 
+          related but evolving studies, I contributed to survey design, qualitative analysis, and participatory 
+          methods. The research is ongoing, and while we have begun to identify initial challenges and user needs, 
+          we have not yet reached final conclusions or published our findings. My contributions include analyzing 
+          interview data, deploying new surveys, and helping to conceptualize technology solutions for improving 
+          the online consent experience.
+        </p>
+      </div>
+      <div class="project-section">
+        <h2>Problem Statement / Challenge</h2>
+        <p>
+          Online dating presents unique challenges for Deaf, Hard of Hearing, Visually Impaired, and Autistic adults, especially around intention & consent in digital interactions. How do marginalized users experience giving and receiving sexual consent online and what solutions can improve their experiences?
+        </p>
+      </div>
+      <div class="project-section">
+        <h2>Process & Methods</h2>
+        <ul>
+          <li><strong>Project 1:</strong> Analyzed past experiences of deaf, hard of hearing, and visually impaired online daters via reflexive thematic analysis of survey data.</li>
+          <li><strong>Project 2:</strong> Survey design, data collection, and preliminary analysis for Autistic online daters.</li>
+          <li><strong>Project 3:</strong> Participatory design and survey for autistic adults about consent, technology solutions, and hypothetical scenarios.</li>
+        </ul>
+      </div>
+      <!-- <div class="project-section">
+        <h2>Project Highlights</h2>
+        <ul>
+          <li>Thematic maps showing common issues/barriers in online consent.</li>
+          <li>Insights on desired technology features to support consent-awareness.</li>
+          <li>Example survey questions and synthesized user journey narratives.</li>
+        </ul>
+      </div> -->
+      <div class="project-section">
+        <h2>Project Highlights</h2>
+        <ul>
+          <li><strong>Qualitative Analysis:</strong> Conducted reflexive thematic analysis of interview and survey data concerning Deaf, Hard of Hearing, and Visually Impaired online daters and their experiences with consent.</li>
+          <li><strong>Survey Design & Deployment:</strong> Crafted and administered a survey for autistic adults to gather data on their online dating and consent experiences via Qualtrics, then began data analysis using a Miro board for organization.</li>
+          <li><strong>Participatory Design:</strong> Developed a specialized survey to investigate autistic users’ perspectives on ideal consent scenarios, inviting feedback on hypothetical situations and technological solutions.</li>
+          <li><strong>Collaboration:</strong> Worked dynamically as project scopes shifted, adapted flexibly to new study directions, and actively contributed as part of a multi-level research team.</li>
+        </ul>
+      </div>
+      <div class="project-section">
+        <h2>Lessons Learned</h2>
+        <ul>
+          <li>Became comfortable managing multiple research foci and shifting timelines.</li>
+          <li>Deepened my understanding of qualitative methodologies and the nuances of consent in technology-mediated interactions.</li>
+          <li>Enhanced cross-disciplinary collaboration skills, learning to translate user needs into both research insights and real design recommendations.</li>
+        </ul>
+      </div>
+      <div class="project-section">
+        <h2>Tools and Skills Used</h2>
+        <p>Reflexive thematic analysis, qualitative survey creation and deployment, participatory design methods, collaboration with multi-level academic teams.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__title">Camryn Toth</p>
+    <div class="footer__social">
+      <a href="https://www.facebook.com/camryn.toth.703527/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+    </div>
+    <p class="footer__copy">&#169; Bedimcode. All rights reserved</p>
+  </footer>
+</body>
+</html>
