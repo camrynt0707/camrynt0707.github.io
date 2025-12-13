@@ -7,45 +7,82 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- You can copy your header/navigation here if you want -->
-  <header>
-    <!-- ...navigation code... -->
-    <a href="index.html" class="button">← Back to Portfolio</a>
+  <!-- ===== HEADER ===== -->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="index.html" class="nav__logo">Camryn Toth</a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
   </header>
+
   <main>
     <section class="project-detail">
+      <a href="index.html#work" class="button back-btn">← Back to Portfolio</a>
       <h1>REU Research: UX for Marginalized Online Daters</h1>
-      <img src="assets/img/reu-project.jpg" alt="REU Research Project" style="width:100%;max-width:700px;">
+      <img src="assets/img/reu-project.jpg" alt="REU Research Project">
+
       <h2>Project Overview</h2>
       <ul>
+        <li><strong>Title:</strong> Designing & Analyzing UX for Marginalized Online Daters (Deaf, Hard of Hearing, Visually Impaired, Autistic)</li>
         <li><strong>Timeline:</strong> Summer REU Program, University of Michigan–Flint</li>
         <li><strong>Role:</strong> Undergraduate Researcher</li>
-        <li><strong>Team:</strong> 2 undergrads, grad students, professor</li>
+        <li><strong>Team:</strong> 2 undergrads, several grad students, lead professor</li>
       </ul>
+
       <h2>Problem Statement / Challenge</h2>
-      <p>Online dating presents unique challenges for Deaf, Hard of Hearing, Visually Impaired, and Autistic adults...</p>
+      <p>
+        Online dating presents unique challenges for Deaf, Hard of Hearing, Visually Impaired, and Autistic adults, especially around intention & consent in digital interactions.
+      </p>
+
       <h2>Process & Methods</h2>
       <ul>
-        <li>Project 1: Reflexive thematic analysis for D/HH/VI daters</li>
-        <li>Project 2: Survey design & thematic analysis for Autistic online daters</li>
-        <li>Project 3: Participatory design—survey for autistic adults about consent and technology solutions</li>
+        <li><strong>Project 1:</strong> Reflexive thematic analysis for D/HH/VI daters</li>
+        <li><strong>Project 2:</strong> Survey design & thematic analysis for Autistic online daters</li>
+        <li><strong>Project 3:</strong> Participatory design: surveyed autistic adults about consent and technology solutions</li>
       </ul>
+
       <h2>Solutions & Deliverables</h2>
       <ul>
         <li>Thematic maps of barriers/issues</li>
-        <li>Feature insights for consent-awareness in tech</li>
-        <li>Example survey/user journey narratives</li>
+        <li>Insights for consent-awareness in technology</li>
+        <li>Example survey questions/user journey narratives</li>
       </ul>
+
+      <h2>Impact & Outcomes</h2>
+      <ul>
+        <li>Identified unique needs and design recommendations for platforms</li>
+        <li>Presented findings; contributed to ongoing study</li>
+      </ul>
+
       <h2>Lessons Learned</h2>
       <ul>
-        <li>Flexible project management</li>
+        <li>Flexible project management across three related projects</li>
         <li>Rigorous qualitative analysis & multidisciplinary teamwork</li>
       </ul>
-      <!-- Add more sections/screenshots as you like -->
     </section>
   </main>
-  <footer>
-    <!-- ...footer code... -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p class="footer__title">Camryn Toth</p>
+    <div class="footer__social">
+      <a href="https://www.facebook.com/camryn.toth.703527/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+    </div>
+    <p class="footer__copy">&#169; Bedimcode. All rights reserved</p>
   </footer>
 </body>
 </html>
