@@ -130,7 +130,7 @@
               <h2 class="section-title">Work</h2>
               <div class="work__container bd-grid">
                 <!-- Project 1 -->
-                <a href="#" class="work__img" onclick="openModal('modal-reu'); return false;">
+                <a href="#" class="work__img">
                   <img src="assets/img/reu-project.jpg" alt="REU Research Project">
                   <div class="work__overlay">
                     <h3 class="work__title">REU Research</h3>
@@ -138,7 +138,7 @@
                   </div>
                 </a>
                 <!-- Project 2 -->
-                <a href="#" class="work__img" onclick="openModal('modal-voicemail'); return false;">
+                <a href="#" class="work__img">
                   <img src="assets/img/voicemail.jpg" alt="VoiceMail Project">
                   <div class="work__overlay">
                     <h3 class="work__title">VoiceMail (EECS 498)</h3>
@@ -146,134 +146,16 @@
                   </div>
                 </a>
                 <!-- Project 3 -->
-                <a href="#" class="work__img" onclick="openModal('modal-events'); return false;">
+                <a href="#" class="work__img">
                   <img src="assets/img/event-discovery.jpg" alt="Event Discovery Project">
                   <div class="work__overlay">
                     <h3 class="work__title">Centralized Event App (EECS 493)</h3>
                     <p class="work__desc">Unified Social Event Discovery</p>
                   </div>
                 </a>
+                <!-- Add more projects as needed -->
               </div>
             </section>
-            
-            <!-- Modals for Details (hidden by default) -->
-            <div id="modal-reu" class="work__modal">
-              <div class="work__modal-content">
-                <span class="work__modal-close" onclick="closeModal('modal-reu')">&times;</span>
-                <h2>REU Research - UX for Marginalized Online Daters</h2>
-                <h3>Project Overview</h3>
-                <ul>
-                  <li><strong>Title:</strong> Designing & Analyzing UX for Marginalized Online Daters (Deaf, Hard of Hearing, Visually Impaired, Autistic)</li>
-                  <li><strong>Timeline:</strong> Summer REU Program, University of Michigan–Flint</li>
-                  <li><strong>Role:</strong> Undergraduate Researcher; collaborated with another undergrad, grad students, and a faculty mentor.</li>
-                  <li><strong>Team:</strong> 2 undergrads, several grad students, lead professor.</li>
-                </ul>
-                <h3>Problem Statement / Challenge</h3>
-                <p>
-                  Online dating presents unique challenges for Deaf, Hard of Hearing, Visually Impaired, and Autistic adults, especially around intention & consent in digital interactions.
-                </p>
-                <h3>Process & Methods</h3>
-                <ul>
-                  <li><strong>Project 1:</strong> Reflexive thematic analysis for Deaf/Hard of Hearing/Visually Impaired daters.</li>
-                  <li><strong>Project 2:</strong> Survey design & thematic analysis for Autistic online daters.</li>
-                  <li><strong>Project 3:</strong> Participatory design: surveyed autistic adults about consent and technology solutions.</li>
-                </ul>
-                <h3>Solutions & Deliverables</h3>
-                <ul>
-                  <li>Thematic maps of barriers/issues.</li>
-                  <li>Technology feature insights for consent-awareness.</li>
-                  <li>Example survey and synthesized user journeys.</li>
-                </ul>
-                <h3>Impact & Outcomes</h3>
-                <ul>
-                  <li>Identified needs & design recommendations for platforms.</li>
-                  <li>Presented findings; contributed to ongoing study.</li>
-                </ul>
-                <h3>Lessons Learned</h3>
-                <ul>
-                  <li>Flexible project management across three related projects.</li>
-                  <li>Rigorous qualitative analysis & multidisciplinary teamwork.</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div id="modal-voicemail" class="work__modal">
-              <div class="work__modal-content">
-                <span class="work__modal-close" onclick="closeModal('modal-voicemail')">&times;</span>
-                <h2>EECS 498: VoiceMail – Intentional Voice Communication Platform</h2>
-                <h3>Project Overview</h3>
-                <ul>
-                  <li><strong>Title:</strong> VoiceMail – Creating Intentional Voice Communication</li>
-                  <li><strong>Timeline:</strong> EECS 498 Capstone Project</li>
-                  <li><strong>Role:</strong> UX Designer, Developer (team of 4)</li>
-                  <li><strong>Tech Stack:</strong> Figma, React & TypeScript, Node.js & Firebase, Firestore</li>
-                </ul>
-                <h3>Problem Statement / Challenge</h3>
-                <p>How can digital voice communication foster deeper, more intentional connections despite obstacles of distance and time?</p>
-                <h3>Process & Methods</h3>
-                <ul>
-                  <li>Designed user flows/wireframes in Figma, inspired by letter-writing.</li>
-                  <li>Built a full-stack web app (React, Node.js, Firebase).</li>
-                  <li>Ran qualitative (surveys/interviews, thematic analysis) and quantitative tests (usage metrics, Likert results, Wilcoxon stats).</li>
-                </ul>
-                <h3>Solutions & Deliverables</h3>
-                <ul>
-                  <li>Web app prototype, letter-style interface.</li>
-                  <li>Evaluation summary: usage graphs, quotes/themes.</li>
-                </ul>
-                <h3>Impact & Outcomes</h3>
-                <ul>
-                  <li>Users reported more meaningful voice communication.</li>
-                  <li>Increase in message volume and emotional nuance.</li>
-                  <li>Positive design feedback from participants.</li>
-                </ul>
-                <h3>Lessons Learned</h3>
-                <ul>
-                  <li>Balanced qualitative & quantitative evaluation.</li>
-                  <li>Iterative teamwork in design/dev.</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div id="modal-events" class="work__modal">
-              <div class="work__modal-content">
-                <span class="work__modal-close" onclick="closeModal('modal-events')">&times;</span>
-                <h2>EECS 493: Centralized Event Discovery App</h2>
-                <h3>Project Overview</h3>
-                <ul>
-                  <li><strong>Title:</strong> Unified Social Event Discovery – Empowering Student Participation</li>
-                  <li><strong>Timeline:</strong> EECS 493 Project</li>
-                  <li><strong>Role:</strong> UX Designer/Researcher</li>
-                  <li><strong>Tools:</strong> Figma, user testing/interviews</li>
-                </ul>
-                <h3>Problem Statement / Challenge</h3>
-                <p>
-                  Students miss events due to fragmented info sources and inefficient planning, especially for off-campus events.
-                </p>
-                <h3>Process & Methods</h3>
-                <ul>
-                  <li>Research: Interviews about event awareness, notification clutter, attendee visibility, RSVP systems, transportation.</li>
-                  <li>Design: Figma prototype for centralized event feed/RSVP/maps.</li>
-                  <li>Testing: Usability testing, iterative UI improvements.</li>
-                </ul>
-                <h3>Solutions & Deliverables</h3>
-                <ul>
-                  <li>Prototype screenshots: event feeds, RSVP, filters.</li>
-                  <li>User journey diagrams.</li>
-                  <li>Design recommendations for student orgs.</li>
-                </ul>
-                <h3>Impact & Outcomes</h3>
-                <ul>
-                  <li>Students reported greater event awareness and confidence in participation.</li>
-                  <li>Recommendations for U-M and student orgs.</li>
-                </ul>
-                <h3>Lessons Learned</h3>
-                <ul>
-                  <li>Practiced user-centered research & empathy for diverse needs.</li>
-                  <li>Improved UI through iterative prototyping & testing.</li>
-                </ul>
-              </div>
-            </div>
         </main>
 
         <!--===== FOOTER =====-->
@@ -292,25 +174,11 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js">
-            function openModal(modalId) {
-              document.getElementById(modalId).style.display = "block";
-              document.body.style.overflow = "hidden"; // Prevent background scroll
-            }
-            function closeModal(modalId) {
-              document.getElementById(modalId).style.display = "none";
-              document.body.style.overflow = ""; // Re-enable scrolling
-            }
-            
-            // Optional: Allow closing by clicking outside the modal content
-            document.querySelectorAll('.work__modal').forEach(modal => {
-              modal.addEventListener('click', function(e) {
-                if (e.target === modal) closeModal(modal.id);
-              });
-            });
         </script>
         
     </body>
 </html>
+
 
 
 
