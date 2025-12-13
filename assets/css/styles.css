@@ -543,47 +543,56 @@ img {
   border-radius: 1rem;
 }
 
-.work__overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(36, 62, 99, 0.85);
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.3s;
+.work__modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20,28,40,0.92);
+  overflow-y: auto;
+  animation: modalFade 0.15s ease;
+}
+
+@keyframes modalFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.work__modal-content {
+  background: #fff;
+  margin: 5vh auto;
+  max-width: 700px;
+  padding: 2rem 2rem 3rem 2rem;
   border-radius: 1rem;
-  padding: 1.5rem;
-  text-align: center;
+  box-shadow: 0px 4px 30px rgba(14,36,49,0.18);
+  color: var(--second-color);
+  position: relative;
 }
 
-.work__img:hover .work__overlay {
-  opacity: 1;
-}
-
-.work__title {
-  font-size: 1.5rem;
+.work__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+  transition: color 0.12s;
+  z-index: 2;
 }
 
-.work__desc {
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  max-width: 85%;
-}
+.work__modal-content h2 { margin-top: 0; color: var(--first-color); }
+.work__modal-content h3 { color: var(--first-color); margin-top: 2rem; }
+.work__modal-content ul { margin: 0 0 1rem 0; padding-left: 1.2rem; }
+.work__modal-content li, .work__modal-content p { font-size: 1rem; margin-bottom: 0.7rem; }
+.work__modal-content li { list-style-type: disc; }
 
-/* 2-across grid for larger screens */
-@media screen and (min-width: 768px) {
-  .work__container {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .work__modal-content { 
+    max-width: 90vw; 
+    padding: 1rem; 
   }
-  .work__img img {
-    height: 400px; /* even larger for desktop */
-  }
+  .work__modal-close { right: 0.7rem; }
 }
