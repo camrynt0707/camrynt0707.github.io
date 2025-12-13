@@ -514,11 +514,6 @@ img {
 }
 
 /* Work overlay container */
-.work__img {
-  position: relative;
-  overflow: hidden;
-}
-
 .work__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -537,62 +532,52 @@ img {
 
 .work__img img {
   width: 100%;
-  height: 340px; /* adjust to preferred height */
+  height: 340px; /* adjust as preferred */
   object-fit: cover;
   display: block;
   border-radius: 1rem;
 }
 
-.work__modal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 9000;
-  left: 0; top: 0; right: 0; bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(20,28,40,0.92);
-  overflow-y: auto;
-  animation: modalFade 0.15s ease;
-}
-
-@keyframes modalFade {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-.work__modal-content {
-  background: #fff;
-  margin: 5vh auto;
-  max-width: 700px;
-  padding: 2rem 2rem 3rem 2rem;
-  border-radius: 1rem;
-  box-shadow: 0px 4px 30px rgba(14,36,49,0.18);
-  color: var(--second-color);
-  position: relative;
-}
-
-.work__modal-close {
+/* Overlay for hover */
+.work__overlay {
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--first-color);
-  cursor: pointer;
-  transition: color 0.12s;
-  z-index: 2;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(36, 62, 99, 0.85); /* tint, adjust as needed */
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
 }
 
-.work__modal-content h2 { margin-top: 0; color: var(--first-color); }
-.work__modal-content h3 { color: var(--first-color); margin-top: 2rem; }
-.work__modal-content ul { margin: 0 0 1rem 0; padding-left: 1.2rem; }
-.work__modal-content li, .work__modal-content p { font-size: 1rem; margin-bottom: 0.7rem; }
-.work__modal-content li { list-style-type: disc; }
+.work__img:hover .work__overlay {
+  opacity: 1;
+}
 
-@media (max-width: 768px) {
-  .work__modal-content { 
-    max-width: 90vw; 
-    padding: 1rem; 
+.work__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.work__desc {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 85%;
+}
+
+/* 2-across grid for larger screens */
+@media screen and (min-width: 768px) {
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .work__modal-close { right: 0.7rem; }
+  .work__img img {
+    height: 400px; /* larger for desktop */
+  }
 }
