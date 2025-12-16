@@ -1,1 +1,143 @@
-<doctype=HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Written Work | Camryn Toth</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body {
+      background: #f7faff;
+      font-family: var(--body-font, 'Poppins', sans-serif);
+      margin: 0;
+      color: #25366b;
+    }
+    .main-content {
+      padding-top: 4.5rem;
+      min-height: 95vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .written-work-page {
+      max-width: 780px;
+      margin: 2.5rem auto;
+      padding: 2.5rem 2rem 3rem 2rem;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0px 8px 40px rgba(36, 62, 99, 0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 2.3rem;
+    }
+    .written-work-section {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e4edfb;
+    }
+    .written-work-section:last-child {
+      border-bottom: none;
+    }
+    .written-work-page h1 {
+      font-size: 2.05rem;
+      font-weight: 700;
+      color: #315b96;
+      margin-bottom: 1.2rem;
+    }
+    .written-work-page h2 {
+      font-size: 1.17rem;
+      margin-bottom: 0.8rem;
+      color: #315b96;
+      font-weight: 600;
+    }
+    .written-work-page img {
+      width: 120px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 0.6rem;
+      box-shadow: 0px 2px 10px rgba(36,62,99,0.07);
+      background: #f7fbfd;
+      margin-bottom: 1rem;
+    }
+    .written-work-page p,
+    .written-work-page ul {
+      font-size: 1.04rem;
+      line-height: 1.67;
+    }
+    .written-work-page ul {
+      padding-left: 1.4rem;
+      margin-bottom: 0.6rem;
+    }
+    .written-work__pdf-btn {
+      display: inline-block;
+      background-color: #315b96;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 0.42rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.18s;
+      box-shadow: 0px 2px 8px rgba(36,62,99,0.07);
+      font-size: 1rem;
+      margin-top: 0.7rem;
+    }
+    .written-work__pdf-btn:hover {
+      background-color: #25366b;
+    }
+    @media (max-width: 800px) {
+      .written-work-page {
+        padding: 1rem 0.3rem;
+        max-width: 97vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="index.html" class="nav__logo">Camryn Toth</a>
+      </div>
+      <!-- ...nav menu... -->
+    </nav>
+  </header>
+  <div class="main-content">
+    <section class="written-work-page">
+      <a href="index.html#work" class="button back-btn">← Back to Portfolio</a>
+      <h1>Written Work</h1>
+      
+      <!-- Paper 1 -->
+      <div class="written-work-section">
+        <img src="assets/img/paper-cover-1.jpg" alt="Paper 1 Cover">
+        <h2>Designing Consent: Accessibility in Online Dating</h2>
+        <p>
+          This paper explores the intersection of accessibility and digital consent among Deaf, Hard of Hearing, Visually Impaired, and Autistic users. The qualitative study provides user perspectives and design recommendations for inclusive tech.
+        </p>
+        <ul>
+          <li>Qualitative research and user interviews</li>
+          <li>Design recommendations for accessible technology</li>
+          <li>Case studies of real user journeys</li>
+        </ul>
+        <a class="written-work__pdf-btn" href="assets/docs/designing-consent-paper.pdf" target="_blank">View/Download PDF</a>
+      </div>
+      <!-- Paper 2 -->
+      <div class="written-work-section">
+        <img src="assets/img/paper-cover-2.jpg" alt="Paper 2 Cover">
+        <h2>Social Computing & Intimacy</h2>
+        <p>
+          A 30-page thesis documenting how intentional voice messaging can foster digital intimacy; includes field research, design process, and evaluation results.
+        </p>
+        <ul>
+          <li>Capstone UX research and prototyping</li>
+          <li>User studies and evaluation</li>
+        </ul>
+        <a class="written-work__pdf-btn" href="assets/docs/social-computing-intimacy.pdf" target="_blank">View/Download PDF</a>
+      </div>
+      <!-- Add more written works same format -->
+    </section>
+  </div>
+  <footer class="footer">
+    <!-- ...your footer as before... -->
+  </footer>
+</body>
+</html>
