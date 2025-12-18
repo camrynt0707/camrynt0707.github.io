@@ -52,7 +52,6 @@ body {
 
 h1, h2, p {
   margin: 0;
-  color: var(--first-color, #315b96);
 }
 
 ul {
