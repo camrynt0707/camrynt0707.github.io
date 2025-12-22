@@ -50,7 +50,7 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -600,7 +600,7 @@ img {
   text-align: left;
 }
 
-.project-detail h2 {
+.project-detail h2, h3 {
   font-size: 1.3rem;
   color: var(--first-color, #315b96);
   margin-top: 2.4rem;
